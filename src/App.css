@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  user-select: none;
+}
+@font-face {
+  font-family: Rubik;
+  src: url("/fonts/RubikDoodleShadow-Regular.ttf");
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Italic.ttf");
+  font-weight: italic;
+}
+@font-face {
+  font-family: ubuntu;
+  src: url("/fonts/Ubuntu-Light.ttf");
+  font-weight: lighter;
+}
+h2 {
+  text-align: center;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+*:not(
+    .description,
+    .h-card,
+    .card-thing,
+    .swiper-slide,
+    .swiper,
+    .swiper-wrapper,
+    .swiper-coverflow,
+
+  ) {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+#skills-in-view {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.flip {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+html {
+  scroll-snap-type: y proximity;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: white;
+  z-index: 999999999;
+  transform-origin: 0%;
+}
+.cont {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+.lines-cont {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 49px,
+      rgba(255, 255, 255, 0.15) 10px,
+      rgba(255, 255, 255, 0.15) 50px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 49px,
+      rgba(255, 255, 255, 0.15) 10px,
+      rgba(255, 255, 255, 0.15) 50px
+    );
+  animation: pulse 4s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.underline-hover:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.underline-hover {
+  position: relative;
+}
+.underline-hover:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+.swiper-slide {
+  width: 300px !important;
+  height: 300px;
+}
+svg path,
+svg rect {
+  fill: #ff6700;
+}
