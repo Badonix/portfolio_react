@@ -50,13 +50,25 @@ export const MobileNav = () => {
                 <FaLongArrowAltRight className="w-8 h-8" />
               </div>
               <div className="60 flex flex-col items-center  gap-5">
-                <a className="text-white text-xl" href="#skills-in-view">
+                <a
+                  onClick={() => setIsVisible(false)}
+                  className="text-white text-xl"
+                  href="#skills-in-view"
+                >
                   Skills
                 </a>
-                <a href="#contact-in-view" className="text-xl  text-white">
+                <a
+                  onClick={() => setIsVisible(false)}
+                  href="#contact-in-view"
+                  className="text-xl  text-white"
+                >
                   Contact
                 </a>
-                <a href="#contact-in-view" className="text-xl  text-white">
+                <a
+                  onClick={() => setIsVisible(false)}
+                  href="#contact-in-view"
+                  className="text-xl  text-white"
+                >
                   Experience
                 </a>
               </div>
