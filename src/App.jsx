@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 import FirstSection from "./components/FirstSection/FirstSection";
 import { SecondSection } from "./components/SecondSection";
 import { FourthSection } from "./components/FourthSection";
-import { ThirdSection } from "./components/ThirdSection";
 import { Contact } from "./components/Contact";
 import { useParallax } from "./hooks";
+import { MobileNav } from "./components/MobileNav";
 function App() {
   useParallax();
   return (
@@ -17,9 +17,10 @@ function App() {
       >
         <div className="lines-cont"></div>
       </motion.div>
+      <MobileNav />
       <FirstSection />
       <SecondSection />
-      <ThirdSection />
+      {/* <ThirdSection /> */}
       <FourthSection />
       <Contact />
       <div className="w-screen relative overflow-x-hidden">

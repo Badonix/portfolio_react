@@ -1,5 +1,4 @@
 export const SkillCard = ({ imageSource, title }) => {
-  console.log(title);
   return (
     <div className="bg-white h-card rounded-xl relative w-full flex items-center justify-center flex-col">
       <div className="absolute card-thing x-1/2 -translate-x-1/2 top-4">

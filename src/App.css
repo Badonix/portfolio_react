@@ -62,9 +62,7 @@ body {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
-html {
-  scroll-snap-type: y proximity;
-}
+
 ::-webkit-scrollbar {
   width: 0;
 }

@@ -11,7 +11,7 @@ export const useFourthSection = () => {
       const titleAnimation = animate(
         ".skills-title",
         { opacity: [0, 1] },
-        { type: "spring", stiffness: 300, duration: 3 }
+        { type: "spring", stiffness: 300, delay: 1, duration: 3 }
       );
 
       return () => {

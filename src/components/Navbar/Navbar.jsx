@@ -15,7 +15,7 @@ export const Navbar = ({ navbarShouldShow }) => {
             initial={{ y: -1000 }}
             animate={{ y: -0 }}
             exit={{ y: -1000 }}
-            className="flex items-center justify-between py-6 px-16 fixed w-full z-20 top-0 left-0"
+            className="md:flex hidden items-center justify-between py-6 px-16 fixed w-full z-20 top-0 left-0"
           >
             <div></div>
             <ul className="flex text-white gap-8 items-center text-2xl">

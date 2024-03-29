@@ -15,7 +15,7 @@ export const FourthSection = () => {
       className="h-screen w-screen flex justify-center items-center absolute top-200"
     >
       <div className="relative h-full flex justify-center items-center">
-        <h2 className="skills-title text-white text-3xl absolute top-12 left-1/2 -translate-x-1/2">
+        <h2 className="skills-title text-white text-2xl md:text-3xl absolute top-12 left-1/2 -translate-x-1/2">
           Technologies I&apos;ve worked with
         </h2>
         <Swiper
@@ -36,7 +36,7 @@ export const FourthSection = () => {
         >
           {SkillsData.map((skill, index) => {
             return (
-              <SwiperSlide key={index}>
+              <SwiperSlide key={index + 5}>
                 <SkillCard imageSource={skill.img} title={skill.title} />
               </SwiperSlide>
             );

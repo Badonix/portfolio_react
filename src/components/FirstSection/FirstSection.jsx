@@ -12,12 +12,12 @@ export const FirstSection = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{
               duration: 2,
-              delay: 3,
+              delay: 1,
               type: "spring",
               stiffness: 200,
             }}
             initial={{ x: -3000, opacity: 0 }}
-            className="text-center font-rubik text-white text-8xl"
+            className="text-center font-rubik text-white text-5xl md:text-8xl"
           >
             Hello there
           </motion.h1>
@@ -31,7 +31,7 @@ export const FirstSection = () => {
             animate={{ y: 0, opacity: 1 }}
             type="button"
             transition={{
-              delay: 4.5,
+              delay: 1.5,
               duration: 2,
               type: "spring",
               stiffness: 100,
