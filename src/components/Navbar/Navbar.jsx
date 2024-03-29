@@ -26,7 +26,12 @@ export const Navbar = ({ navbarShouldShow }) => {
               >
                 Skills
               </a>
-              <li className="cursor-pointer underline-hover">Contact</li>
+              <a
+                href="#contact-in-view"
+                className="cursor-pointer underline-hover"
+              >
+                Contact
+              </a>
             </ul>
           </motion.nav>
         )}

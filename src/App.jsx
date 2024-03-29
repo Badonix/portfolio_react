@@ -4,7 +4,10 @@ import FirstSection from "./components/FirstSection/FirstSection";
 import { SecondSection } from "./components/SecondSection";
 import { FourthSection } from "./components/FourthSection";
 import { ThirdSection } from "./components/ThirdSection";
+import { Contact } from "./components/Contact";
+import { useParallax } from "./hooks";
 function App() {
+  useParallax();
   return (
     <>
       <motion.div
@@ -18,6 +21,7 @@ function App() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <Contact />
       <div className="w-screen relative overflow-x-hidden">
         <img
           src="/assets/black-cat.gif"

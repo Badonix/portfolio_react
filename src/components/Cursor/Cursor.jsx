@@ -23,6 +23,7 @@ const Cursor = () => {
         'input[type="submit"]',
         'input[type="image"]',
         "img",
+        "label",
         "label[for]",
         "select",
         "textarea",

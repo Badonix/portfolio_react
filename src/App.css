@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  user-select: none;
-}
 @font-face {
   font-family: Rubik;
   src: url("/fonts/RubikDoodleShadow-Regular.ttf");
+}
+img {
+  user-select: none;
 }
 @font-face {
   font-family: ubuntu;
@@ -146,8 +146,4 @@ html {
 .swiper-slide {
   width: 300px !important;
   height: 300px;
-}
-svg path,
-svg rect {
-  fill: #ff6700;
 }
