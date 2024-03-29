@@ -28,7 +28,7 @@ export const MobileNav = () => {
               transition={{ delay: 1 }}
               exit={{ scale: 0 }}
               onClick={() => setIsVisible(true)}
-              className="fixed top-5 right-5 z-40 text-white"
+              className="md:hidden fixed top-5 right-5 z-40 text-white"
             >
               <BiMenuAltRight className="w-8 h-8" />
             </motion.div>
