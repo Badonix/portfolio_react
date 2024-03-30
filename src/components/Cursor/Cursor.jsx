@@ -33,6 +33,7 @@ const Cursor = () => {
           "textarea",
           "button",
           ".link",
+          ".cursor-pointer",
           ".underline-hover",
         ]}
       />

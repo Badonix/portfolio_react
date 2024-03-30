@@ -1,4 +1,5 @@
 import { AnimatePresence, motion, useScroll, useSpring } from "framer-motion";
+import { BiDownload } from "react-icons/bi";
 export const Navbar = ({ navbarShouldShow }) => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -36,6 +37,14 @@ export const Navbar = ({ navbarShouldShow }) => {
                 className="cursor-pointer underline-hover"
               >
                 Contact
+              </a>
+              <a
+                href="/assets/cv.pdf"
+                download
+                className="rounded-md hover:text-black hover:bg-white transition-colors cursor-pointer px-2 py-1 border-2 flex items-center gap-3 text-white"
+              >
+                CV
+                <BiDownload />
               </a>
             </ul>
           </motion.nav>
