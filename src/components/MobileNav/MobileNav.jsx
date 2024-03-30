@@ -66,7 +66,7 @@ export const MobileNav = () => {
                 </a>
                 <a
                   onClick={() => setIsVisible(false)}
-                  href="#contact-in-view"
+                  href="#experience-in-view"
                   className="text-xl  text-white"
                 >
                   Experience

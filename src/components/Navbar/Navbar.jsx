@@ -19,7 +19,12 @@ export const Navbar = ({ navbarShouldShow }) => {
           >
             <div></div>
             <ul className="flex text-white gap-8 items-center text-2xl">
-              <li className="underline-hover cursor-pointer">Experience</li>
+              <a
+                href="#experience-in-view"
+                className="underline-hover cursor-pointer"
+              >
+                Experience
+              </a>
               <a
                 className="cursor-pointer underline-hover"
                 href="#skills-in-view"

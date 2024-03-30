@@ -6,6 +6,7 @@ import { FourthSection } from "./components/FourthSection";
 import { Contact } from "./components/Contact";
 import { useParallax } from "./hooks";
 import { MobileNav } from "./components/MobileNav";
+import { Experience } from "./components/Experience";
 function App() {
   useParallax();
   return (
@@ -20,7 +21,7 @@ function App() {
       <MobileNav />
       <FirstSection />
       <SecondSection />
-      {/* <ThirdSection /> */}
+      <Experience />
       <FourthSection />
       <Contact />
       <div className="w-screen relative overflow-x-hidden">
