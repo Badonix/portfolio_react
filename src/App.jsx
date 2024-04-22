@@ -10,16 +10,19 @@ import { Experience } from "./components/Experience";
 import { useEffect } from "react";
 function App() {
   const Track = async () => {
-    const response = await fetch("http://localhost:3001/record", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
+    const response = await fetch(
+      "https://tracker-back-flax.vercel.app/record",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          apiKey: "vsZ+DDa5aoAcT3FZH2Z6wsStTcStkNG1lLNnugJnjgs=",
+        }),
       },
-      body: JSON.stringify({
-        apiKey: "vsZ+DDa5aoAcT3FZH2Z6wsStTcStkNG1lLNnugJnjgs=",
-      }),
-    });
+    );
     return response;
   };
   useEffect(() => {
