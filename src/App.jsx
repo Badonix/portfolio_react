@@ -7,7 +7,28 @@ import { Contact } from "./components/Contact";
 import { useParallax } from "./hooks";
 import { MobileNav } from "./components/MobileNav";
 import { Experience } from "./components/Experience";
+import { useEffect } from "react";
 function App() {
+  const Track = async () => {
+    const response = await fetch("http://localhost:3001/record", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        apiKey: "vsZ+DDa5aoAcT3FZH2Z6wsStTcStkNG1lLNnugJnjgs=",
+      }),
+    });
+    return response;
+  };
+  useEffect(() => {
+    try {
+      Track();
+    } catch (e) {
+      console.log(e);
+    }
+  }, []);
   useParallax();
   return (
     <>
