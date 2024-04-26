@@ -8,6 +8,7 @@ import { useParallax } from "./hooks";
 import { MobileNav } from "./components/MobileNav";
 import { Experience } from "./components/Experience";
 import { useEffect } from "react";
+import { ProjectsSection } from "./components/ProjectsSection";
 function App() {
   const Track = async () => {
     const response = await fetch(
@@ -47,6 +48,7 @@ function App() {
       <SecondSection />
       <Experience />
       <FourthSection />
+      <ProjectsSection />
       <Contact />
       <div className="w-screen relative overflow-x-hidden">
         <img

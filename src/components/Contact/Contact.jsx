@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { CiLinkedin } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
-import { MdMail, MdMailOutline } from "react-icons/md";
+import { MdMailOutline } from "react-icons/md";
 import { useContact } from "./useContact";
 
 export const Contact = () => {
@@ -9,13 +9,13 @@ export const Contact = () => {
   return (
     <section
       id="contact-in-view"
-      className="h-screen w-screen flex justify-center items-center absolute top-400 p-4"
+      className="h-screen w-screen flex justify-center items-center absolute top-500 p-4"
     >
       <div
         id="contact-form-cont"
         className="relative contact-form-cont flex flex-col justify-center items-center border border-white rounded-md py-4 md:px-40 px-6 h-auto w-full max-w-5xl"
       >
-        <h2 className=" text-white text-3xl">Contact</h2>
+        <h2 className="text-white text-3xl">Contact</h2>
         <form
           action="https://formsubmit.co/nikdanelia@gmail.com"
           method="POST"
