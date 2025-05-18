@@ -6,7 +6,7 @@ import { MdMailOutline } from 'react-icons/md'
 export const DevMode = ({ setDevMode }) => {
   console.log('JAsk')
   return (
-    <section className='h-screen w-screen flex justify-center items-center absolute p-4'>
+    <section className='md:h-screen w-screen flex justify-center items-center absolute p-4 md:pb-4 pb-24'>
       <div className='relative flex flex-col justify-center items-center border border-white rounded-md py-4 md:px-40 px-6 h-auto w-full max-w-5xl'>
         <p className='text-white'>
           Hi, this website is outdated but has some rough source code and I

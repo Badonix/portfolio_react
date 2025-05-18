@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: Rubik;
-  src: url("/fonts/RubikDoodleShadow-Regular.ttf");
+  src: url('/fonts/RubikDoodleShadow-Regular.ttf');
 }
 img {
   user-select: none;
 }
 @font-face {
   font-family: ubuntu;
-  src: url("/fonts/Ubuntu-Regular.ttf");
+  src: url('/fonts/Ubuntu-Regular.ttf');
 }
 @font-face {
   font-family: ubuntu;
-  src: url("/fonts/Ubuntu-Bold.ttf");
+  src: url('/fonts/Ubuntu-Bold.ttf');
   font-weight: bold;
 }
 @font-face {
   font-family: ubuntu;
-  src: url("/fonts/Ubuntu-Italic.ttf");
+  src: url('/fonts/Ubuntu-Italic.ttf');
   font-weight: italic;
 }
 @font-face {
   font-family: ubuntu;
-  src: url("/fonts/Ubuntu-Light.ttf");
+  src: url('/fonts/Ubuntu-Light.ttf');
   font-weight: lighter;
 }
 h2 {
@@ -93,7 +93,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: repeating-linear-gradient(
+  background:
+    repeating-linear-gradient(
       90deg,
       transparent 0,
       transparent 49px,
@@ -124,7 +125,7 @@ body {
 .underline-hover:after {
   background: none repeat scroll 0 0 transparent;
   bottom: -5px;
-  content: "";
+  content: '';
   display: block;
   height: 3px;
   left: 50%;
